@@ -3,7 +3,7 @@
 
 A tmail host (which below specification defines) is the only requirement to setup a full functioning tmail service. Many additional services can compliment a tmail host adding their special function. Some tmail service implementations are:
 
-- tmail-host — HTTP API, canoncial implemnetation of a tmail host, requires a tmail-store
+- [tmail-host](https://github.com/markmnl/tmail-host) — HTTP API, canoncial implemnetation of a tmail host, requires a tmail-store
 - tmail-id — user identity management service
 - tmail-webapi — HTTP API for exchange of messages between client and host, requires a tmail-store and tmail-id
 - tmail-chalkboard — basic web user interface, requires tmail-webapi 
