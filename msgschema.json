@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/msgschema.json",
+    "title": "Message",
+    "description": "A tmail message",
+    "required": [ "from", "to" ],
+    "type": "object",
+    "properties": {
+      "from": {
+        "description": "Sender address",
+        "type": "string",
+        "maxLength": 201,
+        "minLength": 5,
+        "pattern": ".{1,100}@.{1,100}"
+      },
+      "to": {
+        "description": "Array of recipiant addresses",
+        "minimum": -180,
+        "maximum": 180
+      },
+      "parent_id": {
+        "description": "Array of format: <sender>@<domain>",
+        "minimum": -180,
+        "maximum": 180
+      },
+      "sent": {
+        "description": "Array of format: <sender>@<domain>",
+        "minimum": -180,
+        "maximum": 180
+      },
+      "tags": {
+        "description": "Array of format: <sender>@<domain>",
+        "minimum": -180,
+        "maximum": 180
+      },
+      "body": {
+        "description": "Array of format: <sender>@<domain>",
+        "minimum": -180,
+        "maximum": 180
+      }
+
+    }
+  }
