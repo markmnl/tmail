@@ -1,5 +1,5 @@
 # Thread-Mail
-Thread-mail, often abreviated: tmail, is a messaging protocol built on HTTP. Messages are _relational_ (hence “Thread” in the name) in that they know their parent they are in reply to (using a blockchain identifier), and _topic orientated_ in that each message pertains to a particular topic. 
+Thread-mail, often abbreviated: tmail, is a messaging protocol built on HTTP. Messages are _relational_ (hence “Thread” in the name) in that they know their parent they are in reply to (using a blockchain identifier), and _topic orientated_ in that each message pertains to a particular topic. 
 
 A tmail host (which below specification defines) is the only requirement to setup a full functioning tmail service. Many additional services can compliment a tmail host adding their special function. A selection of tmail service implementations:
 
@@ -16,10 +16,10 @@ A tmail host (which below specification defines) is the only requirement to setu
 - tmail-squawk — notification service via web socket
 - tmail-police — spam filtering service utilising an arsenal of spam busting tactics
 - tmail-foghorn — spam generating service
-- tmail-mugshot — user avatar management service1
+- tmail-mugshot — user avatar management service
   
 ## Features
-- **User experience** — presentation of messages especially hierarchies from multiple replies can be presented intuitevly by clients making use of the relational model and topics.
+- **User experience** — presentation of messages especially hierarchies from multiple replies can be presented intuitively by clients making use of the relational model and topics.
 - **Spam prevention** — replies can be validated to have been in reply to a message using the blockchain identifier. (All messages except the first message initiating a topic are replies). 
 - **Efficiency** — less data transferred because only the last message in a thread needs to be sent. Unlike email clients today which concatenate mail chains in different ways. 
 - **Attachments** — any files can be attached to a message, at the discretion of the host.
