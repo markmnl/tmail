@@ -3,13 +3,14 @@
 
 A tmail host (which below specification defines) is the only requirement to setup a full functioning tmail service. Many additional services can compliment a tmail host adding their special function. Some tmail service implementations are:
 
-- [tmail-host](https://github.com/markmnl/tmail-host) — HTTP API, canoncial implemnetation of a tmail host, requires a tmail-store
+- [tmail-host](https://github.com/markmnl/tmail-host) — HTTP API, canoncial implementation of a tmail host, requires a tmail-store
 - tmail-id — user identity management service
 - tmail-webapi — HTTP API for exchange of messages between client and host, requires a tmail-store and tmail-id
 - tmail-chalkboard — basic web user interface, requires tmail-webapi 
+- tmail-noticeboard — web user interface designed to present messages on big display, requires tmail-webapi 
 - tmail-cmd — command line interface client for sending and retrieving messages from tmail-webapi
-- tmail-store — common interface defining storage, retrival, searching, etc. of messages
-    - tmail-store-stdout
+- [tmail-store](https://github.com/markmnl/tmail-store) — common interface defining storage, retrival, searching, etc. of messages
+    - [tmail-store-stdout](https://github.com/markmnl/tmail-store-stdout)
     - tmail-store-postgres
     - tmail-store-bigtable
     - tmail-store-git
@@ -31,11 +32,10 @@ Thread-Mail (tmail) is a public specification anyone can implement maintaining a
 - **Open public API**. A tmail host can send messages to any other tmail host on the same network.
 - **Undefined private API**. Exchange between client and host is intentionally left undefined. Common implementations can rise and fall on their own merit, such as tmail-webapi.
 
-
 ## Specification
  
 ### Address
-A tmail address 
+![Image tmail address specification](tmail-address.png) 
  
 ### Public API
 A tmail host has one HTTP endpoint to which a JSON message is posted: `/tmail/v1`. For example:
