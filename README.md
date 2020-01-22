@@ -47,7 +47,13 @@ Content-Type: application/json
 Content-Length: 27
  
 {
- ... 
+	"id": null,
+	"pid": null,
+	"from": "markmnl@threadster.appspot.com",
+	"to": "mia323@threadster.appspot.com",
+	"time": 1579706539,
+	"topic": "genisis",
+	"content": "The quick brown fox jumps over the lazy dog."
 }
 ```
  
