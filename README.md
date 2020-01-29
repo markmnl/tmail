@@ -1,7 +1,7 @@
 # Thread-Mail
 ![Image of tea bud](ttree.png) Thread-mail, often abbreviated: tmail, is a messaging protocol built on HTTP. Messages are _relational_ (hence “Thread” in the name) in that they know their parent they are in reply to (using a blockchain identifier), and _topic orientated_ in that each message pertains to a particular topic. 
 
-A tmail host (which below specification defines) is the only requirement to setup a full functioning tmail service. Many additional services can compliment a tmail host adding their special function. Some tmail service implementations are:
+A tmail host (which below [specification](#specification) defines) is the only requirement to setup a full functioning tmail service. Many additional services can compliment a tmail host adding their special function. Some tmail service implementations are:
 
 - [tmail-host](https://github.com/markmnl/tmail-host) — HTTP API, canoncial implementation of a tmail host, requires a tmail-store
 - tmail-id — user identity management service
@@ -45,7 +45,13 @@ Content-Type: application/json
 Content-Length: 27
  
 {
- ... 
+	"id": null,
+	"pid": null,
+	"from": "markmnl@threadster.appspot.com",
+	"to": "mia323@threadster.appspot.com",
+	"time": 1579706539,
+	"topic": "genisis",
+	"content": "The quick brown fox jumps over the lazy dog."
 }
 ```
  
