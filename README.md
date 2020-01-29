@@ -11,9 +11,7 @@ A tmail host (which below specification defines) is the only requirement to setu
 - tmail-cmd — command line interface client for sending and retrieving messages from tmail-webapi
 - [tmail-store](https://github.com/markmnl/tmail-store) — common interface defining storage, retrival, searching, etc. of messages
     - [tmail-store-stdout](https://github.com/markmnl/tmail-store-stdout)
-    - tmail-store-postgres
-    - tmail-store-bigtable
-    - tmail-store-git
+    - [tmail-store-postgres](https://github.com/markmnl/tmail-store-postgres)
 - tmail-squawk — notification service via web socket
 - tmail-police — spam filtering service utilising an arsenal of spam busting tactics
 - tmail-foghorn — spam generating service
